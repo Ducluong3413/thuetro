@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm Trọ Tốt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assest/vscode/main.css">
+    <link rel="stylesheet" href="/assest/font/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="login/login.css">
+    <link rel="stylesheet" href="register/register.css">
+    <link rel="stylesheet" href="/assest/vscode/account.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div class="container">
+                <div class="container_nav">
+                    <div class="img">
+                        <img src="/assest/img/trotot.jpg" alt="">
+                    </div>
+                    <h2>TRỌ TỐT</h2>
+                    <div class="navbar trangchu"><a href="/index.html">TRANG CHỦ</a></div>
+                    <div class="navbar lienhe"><a href="/contact.html">LIÊN HỆ</a></div>
+                    <div class="navbar hotro"><a href="support/support.html">HỔ TRỢ</a></div>
+                    <div class="navbar quangcao"><a href="">QUẢNG CÁO</a></div>
+                    <div class="navbar qltaikhoan"><a href="/account.html">QUẢN LÝ TÀI KHOẢN</a></div>
+                    <div class="navbar timkiem"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i></div>
+                    <div class="navbar taikhoan">
+                        <i class="fa-solid fa-circle-user"></i><a href="">TÀI KHOẢN</a>
+                        <ul>
+                            <li id="login">Đăng nhập</li>
+                            <li>Đăng ký</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+             <!-- Cập nhật thông tin tài khoản-->
+        
+        </div>
+        <div class="container">
+            <div class="form-container">
+                <p>
+                    THÔNG TIN TÀI KHOẢN
+                </p>
+                <ul>
+                    <li> <input type="text" id="fullname" name="fullname" placeholder="Họ và tên"><br></li>
+                    <li> <label for="dob">Ngày sinh</label><input type="date" id="dob" name="dob"><br></li>
+                    <li> <input type="text" id="phone" name="phone" placeholder="Số điện thoại"><br></li>
+                    <li> <input type="text" id="country" name="country" placeholder="Quốc gia"><br></li>
+                </ul>
+                <ul>
+                    <li><input type="text" id="city" name="city" placeholder="Tỉnh / Thành phố"><br></li>
+                    <li> <input type="text" id="district" name="district" placeholder="Quận / Huyện"><br></li>
+                    <li><input type="text" id="ward" name="ward" placeholder="Phường / Xã"><br></li>
+                    <li><input type="text" id="address" name="address" placeholder="Số nhà"><br></li>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button>Cập nhật</button>
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var updateButton = document.querySelector('.button-container button');
+                updateButton.addEventListener('click', function() {
+                    var inputs = document.querySelectorAll('.form-container input[type="text"], .form-container input[type="date"]');
+                    var filled = true;
+                    inputs.forEach(function(input) {
+                        if (input.value.trim() === '') {
+                            filled = false;
+                        }
+                    });
+
+                    if (filled) {
+                        alert('Cập nhật thông tin thành công!');
+                    } else {
+                        alert('Vui lòng điền đầy đủ thông tin trước khi cập nhật.');
+                    }
+                });
+            });
+        </script>
+        
+    </div>
+    <div id="footer-footer">
+        <div class="container">
+            <div class="container_footer_mainn">
+                <div class="container_footer_main_left">
+                    <p>Tìm trọ trên ứng dụng trọ tốt</p>
+                    <div class="container_footer_main_left_noidung">
+
+                        <div class="img">
+                            <img src="/assest/img/trotot.jpg" alt="">
+                        </div>
+                        <ul class="list-img">
+                            <li class="app"><a href=""><img src="/assest/img/appstore.jpg" alt=""></a></li>
+                            <li class="app"><a href=""><img src="/assest/img/chplay.jpg" alt=""></a></li>
+                            <li class="app"><a href=""><img src="/assest/img/app.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container_footer_main_center">
+                    <p>Về nhà tốt</p>
+                    <ul>
+                        <li class="content">Về Nhà Tốt</li>
+                        <li class="content">Quy chế hoạt động sàn</li>
+                        <li class="content">Chính sách bảo mật</li>
+                        <li class="content">Giải quyết tranh chấp</li>
+                        <li class="content">Điều khoản sử dụng</li>
+                    </ul>
+                </div>
+                <div class="container_footer_main_right">
+                    <p>Liên kết</p>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đăng nhập-->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="header-contrainer-login">
+
+                <div class="header-login-form">
+                    <div class="body-name-website">
+                        <img src="assest/img/Logo.png" alt="Logo">
+                    </div>
+                    <div class="body-title-login">
+                        <h2>Đăng Nhập</h2>
+                    </div>
+                    <div class="textbox-username">
+                        <input id="textbox" type="text" placeholder="Tên Đăng Nhập">
+                    </div>
+                    <div class="textbox-password">
+                        <input id="textbox" type="text" placeholder="Mật Khẩu">
+                    </div>
+                    <div class="body-forgot-password">
+                        <a href="">Quên mật khẩu ?</a>
+                    </div>
+                    <div class="body-button-login">
+                        <button>Đăng Nhập</button>
+                    </div>
+                    <div class="body-no-have-account">
+                        <p>Chưa có tài khoản ?</p>
+                        <a href="../register/register.html">Đăng kí tài khoản mới</a>
+                    </div>
+                </div>
+                <div class="other-policies">
+                    <li><a href="">Quy chế hoạt động sàn</a></li>
+                    <span>*</span>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <span>*</span>
+                    <li><a href="">Liên hệ hỗ trợ</a></li>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Đăng kí -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="registerForm">
+                <div class="header-contrainer-register">
+                    <div class="header-register-form">
+                        <div class="body-name-website">
+                            <img src="assest/img/Logo.png" alt="Logo">
+                        </div>
+                        <div class="body-title-register">
+                            <h2>Đăng Kí</h2>
+                        </div>
+                        <div class="textbox-username">
+                            <input type="text" id="textbox" placeholder="Tên Đăng Nhập">
+                        </div>
+                        <div class="textbox-email">
+                            <input type="text" id="textbox" placeholder="Email hoặc Số điện thoại">
+                        </div>
+                        <div class="textbox-password-again">
+                            <input type="text" id="textbox" placeholder="Nhập Mật Khẩu">
+                        </div>
+                        <div class="body-gender">
+                            <div class="body-gender-boy">
+                                <label for="male">Nam</label>
+                                <input type="radio" id="male" name="gender" value="Nam">
+                            </div>
+                            <div class="body-gender-girl">
+                                <label for="male">Nữ</label>
+                                <input type="radio" id="male" name="gender" value="Nữ">
+                            </div>
+                            <div class="body-gender-more">
+                                <label for="male">Giới tính khác</label>
+                                <input type="radio" name="gender" id="male" value="Giới tính khác">
+                            </div>
+                        </div>
+                        <div class="body-agree-to-terms">
+                            <input type="checkbox" id="tickbox">
+                            <p>Bằng việc Đăng ký, bạn đã đọc và đồng ý với Điều khoản sử dụng và Chính sách bảo mật
+                                của Trọ Tốt</p>
+                        </div>
+                        <div class="body-button-register">
+                            <button>Đăng Kí</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    <script src="assest/vscode/style.js">
+
+    </script>
+</body>
+
+</html>

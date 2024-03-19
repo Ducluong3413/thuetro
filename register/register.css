@@ -1,0 +1,123 @@
+
+.header-register-form {
+    width: 380px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.body-name-website img{
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.body-title-register h2{
+    font-family: Helvetica;
+    text-align: center;
+    position: relative;
+    left: -85px;
+    margin: 5px 0px;
+    
+}
+
+#textbox {
+    width: 250px;
+    height: 27px;
+    margin-top: 10px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.body-gender {
+    margin: 15px 0px;
+}
+
+.body-gender-boy {
+    background-color: rgb(201, 205, 205);
+    display: inline;
+    background-size: cover;
+    padding: 6px;
+}
+
+.body-gender-girl {
+    background-color: rgb(201, 205, 205);
+    display: inline;
+    margin-left: 10px;
+    background-size: cover;
+    padding: 6px;
+}
+
+.body-gender-more {
+    background-color: rgb(201, 205, 205);
+    display: inline;
+    margin-left: 10px;
+    background-size: cover;
+    padding: 6px;
+}
+
+.body-gender input {
+    position: relative;
+    top: 3px;
+}
+
+.body-agree-to-terms {
+    margin-top: 15px;
+    width: 350px;
+    position: relative;
+    left: 20px;
+}
+
+.body-agree-to-terms p {
+    display: inline;
+    margin-left: 3px;
+}
+
+.body-button-register button {
+    width: 270px;
+    height: 35px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    background-color: gold;
+    margin-top: 15px;
+}
+
+
+#registerModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    padding: 20px; /* Thêm padding cho form */
+    border: 1px solid #888;
+    width: auto; /* Đặt độ rộng tự động để vừa với nội dung */
+    max-width: 80%; /* Độ rộng tối đa */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#registerModal .modal-content form > * {
+    margin-bottom: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+#registerModal .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#registerModal .close:hover,
+#registerModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

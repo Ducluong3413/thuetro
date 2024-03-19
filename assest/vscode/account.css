@@ -1,0 +1,148 @@
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container label {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .form-container label {
+        width: 100%;
+    }
+}
+
+
+/* Form */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-container p {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    grid-column: span 2;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.form-container .body-account,
+.form-container .account {
+    grid-column: span 1;
+}
+
+.form-container p {
+    grid-column: span 2;
+}
+.form-container ul li {
+    display: flex;
+    align-items: center; 
+}
+
+.form-container ul li label {
+    font-size: 16px; 
+    font-weight: none; 
+    color: #857f7f; 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+.form-container ul li input[type="date"] {
+    width: calc(100% - 40px); 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.form-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.button-container {
+    grid-column: span 2; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.button-container button {
+    width: 200px; 
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+
+
+@media (max-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button-container {
+        grid-column: span 1;
+    }
+}
+#footer-footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Các phần tử bên trong footer */
+#footer-footer {
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #f8f9fa; 
+    padding: 20px 0; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+}
